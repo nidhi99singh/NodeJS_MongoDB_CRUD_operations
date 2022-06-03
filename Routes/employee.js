@@ -6,8 +6,6 @@ const jwt = require('jsonwebtoken')
 const verifyToken = require('../auth')
 const { authPage } = require('../middlewares')
 const { default: jwtDecode } = require('jwt-decode')
-const product = require('../models/product')
-
 
 //check connection
 
@@ -207,25 +205,5 @@ router.post('/token/', async (req, res) => {
         res.json("Token: " + token)
     });
 })
-
-router.post('/addproduct', async (req, res) => {
-
-    const body = req.body
-    try {
-
-        const product = new Employee({
-            productName: body.productName,
-            category: body.category,
-            price: body.price,
-            quantity: body.quantity
-        })
-        const saveProduct = await product.save()
-        res.json(saveProduct)
-    } catch (err) {
-
-        console.log(err)
-    }
-})
-
 
 module.exports = router

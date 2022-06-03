@@ -20,6 +20,3 @@ con.on('open', () => {
 })
 var employeeRoutes = require('./Routes/employee')
 app.use('/', employeeRoutes)
-
-var productRoutes = require('./Routes/product')
-app.use('/product', productRoutes)

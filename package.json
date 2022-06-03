@@ -19,5 +19,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nidhi99singh/NodeJS_MongoDB_CRUD_operations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nidhi99singh/NodeJS_MongoDB_CRUD_operations/issues"
+  },
+  "homepage": "https://github.com/nidhi99singh/NodeJS_MongoDB_CRUD_operations#readme",
   "description": ""
 }
